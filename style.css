@@ -1,0 +1,216 @@
+* {
+  margin: auto;
+  font-family: "Roboto";
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.header {
+  display: flex;
+  height: 100px;
+  width: auto;
+}
+.header .title {
+  font-size: 30px;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+.header .arrow img {
+  width: 50px;
+  padding-left: 40px;
+}
+.header .notification img {
+  width: 50px;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+  padding-top: 20px;
+}
+.profile .picture {
+  display: flex;
+}
+.profile .details {
+  padding-left: 15px;
+}
+.profile .picture .image {
+  background: #ff7a59;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.profile .picture .tick {
+  width: 16px;
+  padding-left: 20px;
+}
+.details .name .fname {
+  font-weight: bold;
+  text-align: center;
+}
+.details .followers_count {
+  padding-left: 5px;
+  font-size: 12px;
+  color: #919eb6;
+}
+.details .metadata {
+  color: #919eb6;
+  font-size: 12px;
+}
+.profile .follow button {
+  background: #01b99f;
+  border: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.profile .follow {
+  cursor: pointer;
+}
+.content {
+  color: #1d232b;
+  width: 60%;
+}
+.content h2,
+.content p {
+  color: #313b49;
+  padding-top: 20px;
+}
+.buttons {
+  display: flex;
+  width: 60%;
+  padding-top: 20px;
+}
+.buttons button {
+  color: #5a6b87;
+  border: 2px solid #ced3de;
+  border-radius: 18px;
+  padding: 10px 12px 10px 12px;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+.main_image {
+  width: 60%;
+  padding: 20px 0px 5px 0px;
+}
+.main_image img {
+  width: 100%;
+  height: 100%;
+}
+.interaction {
+  display: flex;
+  width: 60%;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.like img {
+  width: 32px;
+}
+.comment img {
+  width: 30px;
+}
+.save img {
+  width: 30px;
+  transform: rotateY(0deg) rotate(90deg);
+}
+.more p {
+  font-size: 30px;
+  flex: 2;
+}
+.interaction > * {
+  flex: 1 1 auto;
+}
+.interaction div:hover {
+  cursor: pointer;
+}
+.content .para {
+  padding-left: 100px;
+  padding-top: 0px;
+}
+#interaction {
+  padding-left: 180px;
+}
+.reply {
+  padding-left: 100px;
+}
+.reply .profile {
+  padding-top: 0px;
+}
+.reply .profile .image {
+  background: #fbb0ae;
+}
+.footer {
+  display: flex;
+  width: 60%;
+  color: #afb9ca;
+  padding-bottom: 20px;
+  background: #f5f5f5;
+}
+.footer .image_default {
+  cursor: pointer;
+}
+.footer .content {
+  flex: 1;
+  cursor: pointer;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 700px) and (min-width: 350px) {
+  .like img {
+    width: 16px;
+  }
+  .comment img,
+  .save img {
+    width: 16px;
+  }
+  .more p {
+    font-size: 16px;
+  }
+  .like,
+  .comment {
+    font-size: 10px;
+  }
+  .content {
+    font-size: 12px;
+  }
+  .buttons button {
+    border-radius: 18px;
+    padding: 4px 12px 4px 12px;
+    margin: 6px 6px;
+    font-size: 10px;
+  }
+  .profile .picture .image {
+    width: 40px;
+    height: 40px;
+  }
+  .profile .follow button {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .details .name .fname {
+    font-size: 15px;
+  }
+  .header .arrow img {
+    width: 30px;
+    padding-left: 20px;
+  }
+  .header .notification img {
+    width: 30px;
+    padding-right: 20px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
